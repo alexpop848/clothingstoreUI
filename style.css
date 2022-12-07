@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Prompt', sans-serif;
+    overflow-x: hidden;
+    
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.intro{
+    width: 100%;
+    display: flex;
+}
+
+
+.main-1{
+    position: relative;
+    height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+       
+}
+
+.part1{
+    position: relative;
+    height: 100vh;
+    min-width: 100%;
+    scroll-snap-align: start;
+}
+.part2{
+    position: relative;
+    height: 100vh;
+    min-width: 100%;
+    overflow: hidden;
+}
+.part3{
+    position: relative;
+    height: 100vh;
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.main-2{
+    position: relative;
+    height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+}
+
+.main-3{
+    position: relative;
+    height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+}
+
+.second-1{
+    min-height: 100vh;
+    min-width: 100vw;
+    position: relative;
+    scroll-snap-align: start;
+    border: 2px solid pink;
+}
+
+.second-1 h3{
+    font-size: 2rem;
+    margin-top: 200px;
+    margin-left: 550px;
+
+}
+.second-1 h1{
+    margin-top: 0px;
+    font-size: 5rem;
+    margin-left: 700px;
+}
+
+.second-2 h3{
+    font-size: 2rem;
+    margin-top: -900px;
+    margin-left: -1150px;
+    transform: rotate(-90deg);
+}
+.second-2 h1{
+    font-size: 5rem;
+    margin-left: -1000px;
+    transform: rotate(-90deg);
+}
+
+.line-1{
+    width: 900px;
+    height: 5px;
+    background-color: #000;
+    margin-left: 10px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+.line-2{
+    width:650px;
+    height: 5px;
+    transform: rotate(90deg);
+    background-color: #000;
+    margin-left: 650px;
+    border-radius: 4px;
+}
+.line-3{
+    width: 900px;
+    height: 5px;
+    background-color: #000;
+    margin-left: 10px;
+    margin-top: 200px;
+    border-radius: 4px;
+}
+
+
+.women-hoodie-left{
+    left: 0;
+    width: 450px;
+    margin-top: 0px;
+    margin-left: 50px;
+    height: auto;
+    z-index: 100;
+    position: absolute;
+    box-shadow: 0px 3px 5px black;
+}
+.women-hoodie-right{
+    right: 0;
+    bottom: 0;
+    width: 500px;
+    height: auto;
+    z-index: 100;
+    position: absolute;
+    box-shadow: 3px 0px 5px black;
+}
+.women-pants-left{
+    left: 0;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 350px;
+    height: auto;
+    position: absolute;
+    box-shadow: 0px 3px 5px black;
+}
+.women-pants-right{
+    right: 0;
+    top: 0;
+    width: auto;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    box-shadow: 3px 0px 5px black;
+}
+
+.second-2{
+    min-height: 100vh;
+    min-width: 100vw;
+    position: relative;
+    scroll-snap-align: start;
+}
+.second-3{
+    height: 100vh;
+    min-width: 100%;
+    overflow: hidden;
+    background-color: rgb(218, 119, 61);
+}
+
+.container{
+    margin: 70px 0;
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 9;
+    filter: blur(10px); 
+}
+
+.side{
+    width: 50%;
+    height: 100%;
+}
+
+.v{
+    position: absolute;
+    z-index: -1;
+    filter: brightness(100%);
+}
+
+.v0{
+    filter: blur(2rem);
+    filter: brightness(20%);
+}
+
+.front{
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.logo{
+    margin-top: 20px;
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 2rem;
+    flex: 1;
+    margin-bottom: 50px;
+}
+
+.selector{
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    left: 40%;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+    z-index: 200;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+
+
+.btn{
+    width: 400px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #fff 3px solid;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #000;
+    transition: 0.2s ease-in;
+    border-color: #000;
+}
+
+h4{
+    cursor: pointer;
+}
+
+h4:hover{
+    text-decoration: underline;
+    
+}
